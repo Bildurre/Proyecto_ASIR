@@ -1,3 +1,5 @@
+USE proyecto;
+
 -- ---- PRODUCTOS ---- --
 
 INSERT INTO productos VALUES ('PO001', 'Tatuajes', 'Acción regeneradora, hidratante, antivírica,
@@ -13,7 +15,7 @@ INSERT INTO productos VALUES ('PO003', 'Fungicida', 'Combate los hongos de la pi
 INSERT INTO productos VALUES ('PO004', 'Bálsamo', 'Para golpes, retorcijones, esguinces, dolor muscular,
 catarro, ronquidos, mocos. Acción circulatoria, analgésica, antiinflamatoria, expectorante.', 'pomada');
 
-INSERT INTO productos VALUES ('PO004', 'Hemorroides', 'Acción astringente, regeneradora, circulatoria.
+INSERT INTO productos VALUES ('PO005', 'Hemorroides', 'Acción astringente, regeneradora, circulatoria.
   Especial para acabar con las hemorroides.', 'pomada');
 
 INSERT INTO productos VALUES ('CR001', 'Piel Mixta', 'Elaborada en una base de aceite de karité
@@ -77,53 +79,53 @@ INSERT INTO tamanios VALUES (250, 13);
 
 -- ---- FORMATOS ---- --
 
-INSERT INTO formatos VALUES (60, 'PO001', 800, 4);
-INSERT INTO formatos VALUES (60, 'PO002', 800, 3);
-INSERT INTO formatos VALUES (60, 'PO003', 800, 5);
-INSERT INTO formatos VALUES (60, 'PO004', 800, 4);
-INSERT INTO formatos VALUES (60, 'PO005', 800, 7);
+INSERT INTO formatos VALUES (NULL, 60, 'PO001', 800, 4);
+INSERT INTO formatos VALUES (NULL, 60, 'PO002', 800, 3);
+INSERT INTO formatos VALUES (NULL, 60, 'PO003', 800, 5);
+INSERT INTO formatos VALUES (NULL, 60, 'PO004', 800, 4);
+INSERT INTO formatos VALUES (NULL, 60, 'PO005', 800, 7);
 
-INSERT INTO formatos VALUES (30, 'PO001', 600, 5);
-INSERT INTO formatos VALUES (30, 'PO002', 600, 6);
-INSERT INTO formatos VALUES (30, 'PO003', 600, 5);
-INSERT INTO formatos VALUES (30, 'PO004', 600, 3);
-INSERT INTO formatos VALUES (30, 'PO005', 600, 8);
+INSERT INTO formatos VALUES (NULL, 30, 'PO001', 600, 5);
+INSERT INTO formatos VALUES (NULL, 30, 'PO002', 600, 6);
+INSERT INTO formatos VALUES (NULL, 30, 'PO003', 600, 5);
+INSERT INTO formatos VALUES (NULL, 30, 'PO004', 600, 3);
+INSERT INTO formatos VALUES (NULL, 30, 'PO005', 600, 8);
 
-INSERT INTO formatos VALUES (60, 'CR001', 1400, 3);
-INSERT INTO formatos VALUES (60, 'CR002', 1400, 3);
-INSERT INTO formatos VALUES (60, 'CR003', 1400, 5);
-INSERT INTO formatos VALUES (60, 'CR004', 1400, 7);
+INSERT INTO formatos VALUES (NULL, 60, 'CR001', 1400, 3);
+INSERT INTO formatos VALUES (NULL, 60, 'CR002', 1400, 3);
+INSERT INTO formatos VALUES (NULL, 60, 'CR003', 1400, 5);
+INSERT INTO formatos VALUES (NULL, 60, 'CR004', 1400, 7);
 
-INSERT INTO formatos VALUES (150, 'CR001', 2200, 2);
-INSERT INTO formatos VALUES (150, 'CR002', 2200, 3);
-INSERT INTO formatos VALUES (150, 'CR003', 2200, 4);
-INSERT INTO formatos VALUES (150, 'CR004', 2200, 6);
+INSERT INTO formatos VALUES (NULL, 150, 'CR001', 2200, 2);
+INSERT INTO formatos VALUES (NULL, 150, 'CR002', 2200, 3);
+INSERT INTO formatos VALUES (NULL, 150, 'CR003', 2200, 4);
+INSERT INTO formatos VALUES (NULL, 150, 'CR004', 2200, 6);
 
-INSERT INTO formatos VALUES (150, 'AC001', 1600, 2);
-INSERT INTO formatos VALUES (150, 'AC002', 1600, 4);
-INSERT INTO formatos VALUES (150, 'AC003', 1600, 5);
-INSERT INTO formatos VALUES (150, 'AC004', 1600, 3);
-INSERT INTO formatos VALUES (150, 'AC005', 1600, 6);
+INSERT INTO formatos VALUES (NULL, 150, 'AC001', 1600, 2);
+INSERT INTO formatos VALUES (NULL, 150, 'AC002', 1600, 4);
+INSERT INTO formatos VALUES (NULL, 150, 'AC003', 1600, 5);
+INSERT INTO formatos VALUES (NULL, 150, 'AC004', 1600, 3);
+INSERT INTO formatos VALUES (NULL, 150, 'AC005', 1600, 6);
 
-INSERT INTO formatos VALUES (250, 'AC001', 2500, 2);
-INSERT INTO formatos VALUES (250, 'AC002', 2500, 3);
-INSERT INTO formatos VALUES (250, 'AC003', 2500, 4);
-INSERT INTO formatos VALUES (250, 'AC004', 2500, 3);
-INSERT INTO formatos VALUES (250, 'AC005', 2500, 5);
+INSERT INTO formatos VALUES (NULL, 250, 'AC001', 2500, 2);
+INSERT INTO formatos VALUES (NULL, 250, 'AC002', 2500, 3);
+INSERT INTO formatos VALUES (NULL, 250, 'AC003', 2500, 4);
+INSERT INTO formatos VALUES (NULL, 250, 'AC004', 2500, 3);
+INSERT INTO formatos VALUES (NULL, 250, 'AC005', 2500, 5);
 
-INSERT INTO formatos VALUES (30, 'TI001', 1500, 3);
-INSERT INTO formatos VALUES (30, 'TI002', 1500, 2);
-INSERT INTO formatos VALUES (30, 'TI002', 1500, 3);
+INSERT INTO formatos VALUES (NULL, 30, 'TI001', 1500, 3);
+INSERT INTO formatos VALUES (NULL, 30, 'TI002', 1500, 2);
+INSERT INTO formatos VALUES (NULL, 30, 'TI002', 1500, 3);
 
-INSERT INTO formatos VALUES (15, 'CA001', 350, 5);
-INSERT INTO formatos VALUES (15, 'CA002', 350, 8);
+INSERT INTO formatos VALUES (NULL, 15, 'CA001', 350, 5);
+INSERT INTO formatos VALUES (NULL, 15, 'CA002', 350, 8);
 
 
 -- ---- USUARIOS ---- --
 
-INSERT INTO usuarios VALUES ('Ana', 'Zabala', 'ana@zabala.com', 666666666);
-INSERT INTO usuarios VALUES ('Jon', 'Ancho', 'jon@ancho.com', 777777777);
-INSERT INTO usuarios VALUES ('Jon', 'Delgado', 'jon@delgado.com', 888888888);
+INSERT INTO usuarios VALUES (NULL, 'Ana', 'Zabala', 'ana@zabala.com', MD5('12345678'), 666666666);
+INSERT INTO usuarios VALUES (NULL, 'Jon', 'Ancho', 'jon@ancho.com', MD5('12345678'), 777777777);
+INSERT INTO usuarios VALUES (NULL, 'Jon', 'Delgado', 'jon@delgado.com', MD5('12345678'), 888888888);
 
 
 -- ---- PEDIDOS ---- --

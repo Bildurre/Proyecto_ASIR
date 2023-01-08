@@ -34,7 +34,8 @@ CREATE TABLE IF NOT EXISTS usuarios (
   nombre VARCHAR(50) NOT NULL,
   apellido VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL UNIQUE,
-  telefono INT UNSIGNED UNIQUE,
+  contrasenia VARCHAR(32) NOT NULL,
+  telefono INT UNSIGNED,
   PRIMARY KEY (id_usuario)
 );
 
@@ -50,7 +51,7 @@ CREATE TABLE IF NOT EXISTS pedidos (
 
 CREATE TABLE IF NOT EXISTS listas_pedidos (
   id_pedido INT UNSIGNED NOT NULL,
-  id_formato SMALLINT UNSIGNED NOT NULL,
+  id_formato INT UNSIGNED NOT NULL,
   cantidad TINYINT UNSIGNED NOT NULL,
   PRIMARY KEY (id_pedido, id_formato),
   FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido)
