@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS tamanios (
 );
 
 CREATE TABLE IF NOT EXISTS formatos (
-  id_formato SMALLINT UNSIGNED NOT NULL,
+  id_formato INT UNSIGNED AUTO_INCREMENT NOT NULL,
   volumen SMALLINT UNSIGNED NOT NULL,
   id_producto CHAR(5) NOT NULL,
   precio SMALLINT UNSIGNED NOT NULL DEFAULT 0,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 CREATE TABLE IF NOT EXISTS pedidos (
   id_pedido INT UNSIGNED AUTO_INCREMENT NOT NULL,
   id_usuario INT UNSIGNED,
-  fecha DATETIME NOT NULL,
+  fecha DATE NOT NULL,
   estado ENUM('en espera', 'preparado', 'entregado') NOT NULL,
   PRIMARY KEY (id_pedido),
   FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
