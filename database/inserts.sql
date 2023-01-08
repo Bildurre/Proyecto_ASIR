@@ -130,16 +130,16 @@ INSERT INTO usuarios VALUES (NULL, 'Jon', 'Delgado', 'jon@delgado.com', MD5('123
 
 -- ---- PEDIDOS ---- --
 
-INSERT INTO pedidos VALUES (1, '2022-11-12', 'entregado');
-INSERT INTO pedidos VALUES (1, '2022-11-17', 'entregado');
-INSERT INTO pedidos VALUES (1, '2022-12-15', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 1, '2022-11-12', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 1, '2022-11-17', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 1, '2022-12-15', 'entregado');
 
-INSERT INTO pedidos VALUES (2, '2022-12-25', 'entregado');
-INSERT INTO pedidos VALUES (2, '2023-01-8', 'preparado');
+INSERT INTO pedidos VALUES (NULL, 2, '2022-12-25', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 2, '2023-01-8', 'preparado');
 
-INSERT INTO pedidos VALUES (3, '2022-12-19', 'entregado');
-INSERT INTO pedidos VALUES (3, '2022-12-27', 'entregado');
-INSERT INTO pedidos VALUES (3, '2022-01-9', 'en espera');
+INSERT INTO pedidos VALUES (NULL, 3, '2022-12-19', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 3, '2022-12-27', 'entregado');
+INSERT INTO pedidos VALUES (NULL, 3, '2022-01-9', 'en espera');
 
 -- ---- LISTAS_PEDIDOS ---- --
 
