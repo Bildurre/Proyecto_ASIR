@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS listas_pedidos (
 );
 
 CREATE TABLE IF NOT EXISTS administrador (
-  nombre CHAR(5),
+  nombre CHAR(11),
   contra VARCHAR(32),
   PRIMARY KEY nombre
 );
