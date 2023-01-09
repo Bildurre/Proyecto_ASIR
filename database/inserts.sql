@@ -168,3 +168,7 @@ INSERT INTO listas_pedidos VALUES (6, 27, 1);
 INSERT INTO listas_pedidos VALUES (6, 33, 2);
 
 INSERT INTO listas_pedidos VALUES (7, 33, 3);
+
+-- ---- ADMIN ---- --
+
+INSERT INTO administrador VALUES ('admin', MD5('12345678'));

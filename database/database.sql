@@ -59,3 +59,9 @@ CREATE TABLE IF NOT EXISTS listas_pedidos (
   FOREIGN KEY (id_formato) REFERENCES formatos(id_formato)
     ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS administrador (
+  nombre CHAR(5),
+  contra VARCHAR(32),
+  PRIMARY KEY nombre
+);
