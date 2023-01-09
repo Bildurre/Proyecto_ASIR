@@ -15,6 +15,10 @@ header {
 header h1, header form {
   flex:auto,
 }
+
+header form {
+  width: 20vw;
+}
 header form a {
   color: white;
   text-decoration: none;
@@ -23,12 +27,17 @@ header form p {
   margin: 5px;
 }
 
+#cuerpo {
+  display: flex;
+}
+
 nav {
   display: flex;
   flex-direction: column;
   width: 10vw;
   height: 80vh;
   background-color: #a8f094;
+  flex-shrink: 0;
 }
 
 nav button {
@@ -53,4 +62,84 @@ footer {
   height: 5vh;
   background-color: #0c3700;
   color: #aefc9a;
+}
+
+.badlogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:auto;
+}
+
+.badlogin form {
+  width: 20vw;
+}
+.badlogin form a {
+  color: rgb(1, 63, 32);
+  text-decoration: none;
+}
+.badlogin form p {
+  margin: 5px;
+}
+
+#contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  height: 80vh;
+}
+
+#vendidos {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin: 5px;
+  padding: 5px;
+  border: solid 3px rgb(1, 37, 3);
+  background-color: #c7f0bc;
+
+}
+.producto .img {
+  height: 200px;
+  width: 200px;
+}
+
+#pedido {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.contenedor_pedido, .contenedor_detalle {
+  display: flex;
+  width: 50vw;
+}
+
+
+.celda_pedido {
+  flex: auto;
+  width: 15vw;
+  margin-left: 20px;
+}
+
+.contenedor_detalle {
+  background-color: #aefc9a;
+  padding-left: 80px;
+  gap:80px;
+}
+.celda_detalle {
+  flex: auto;
+  width: 15vw;
+  
 }
